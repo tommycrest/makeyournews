@@ -1,0 +1,86 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
+*{
+    font-family:roboto;
+}
+
+.small{
+    font-size:11px;
+}
+
+.nocss {}
+
+/* arabo e israeliano
+table div { 
+    position: relative;
+    right: 0px;
+    width: 100%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+    text-align: right;
+}*/
+
+td {
+    padding: 10px 0px 10px 10px; 
+    vertical-align: middle;
+    padding: 8px;
+}
+
+table
+{
+	background: #fff;
+	border-collapse: collapse;
+	font-family: "Arial", "Verdana", Sans-Serif;
+	font-size: 14px;
+	/*width: 620px;*/
+    width: 100%;
+	text-align: left;
+}
+th
+{
+	border-bottom: 2px solid #394A57;
+	color: #394A57;
+	font-size: 14px;
+	font-weight: normal;
+	padding: 10px;
+}
+td
+{
+	border-bottom: 1px solid #CCCCCC;
+	color: #394A57;
+	padding: 14px;
+}
+tr:hover td
+{
+	color: #95b4c4;
+}
+
+p
+{
+	background: #fff;
+	border-collapse: collapse;
+	font-family: "Arial", "Verdana", Sans-Serif;
+	font-size: 14px;
+	width: 620px;
+	text-align: left;
+}
+
+@media only screen and (min-width:480px) {
+ p {
+        background: #fff;
+        border-collapse: collapse;
+        font-family: "Arial", "Verdana", Sans-Serif;
+        font-size: 14px;
+        width: 100%;
+        text-align: left;
+    }
+    
+    table {
+        background: #fff;
+        border-collapse: collapse;
+        font-family: "Arial", "Verdana", Sans-Serif;
+        font-size: 14px;
+        width: 100%;
+        text-align: left;
+    }
+}
+

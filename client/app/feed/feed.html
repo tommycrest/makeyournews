@@ -1,0 +1,100 @@
+<header class="hero-unit" id="banner">
+  <div class="container">
+    <h1>Makeyournews!!</h1>
+    Choose your way to gather news from the world
+    <p class="lead"></p>
+    <img src="assets/images/logo.gif" alt="Logo of make your news">
+  </div>
+</header>
+
+<div class="container">
+    <div>
+        <div class="row">
+            <h4>Choice your news way</h4>
+            <form>
+                <div class="input-prepend span12">
+              <div class="btn-group">
+                <button class="btn btn-info" type="button" tabindex="-1">Feed Chooser</button>
+                <button class="btn btn-info dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <!-- li><a href="#" ng-click="feedSrc='http://rss.cnn.com/rss/cnn_topstories.rss';$ctrl.loadFeed(feedSrc);">CNN</a></li>
+                    <li><a href="#" ng-click="feedSrc='http://news.ycombinator.com/rss';$ctrl.loadFeed(feedSrc);">Hacker News</a></li>
+                    <li><a href="#" ng-click="feedSrc='http://feeds2.feedburner.com/Mashable';$ctrl.loadFeed(feedSrc);">Mashable</a></li>                  
+                    <li><a href="#" ng-click="feedSrc='http://feeds.huffingtonpost.com/huffingtonpost/raw_feed';$ctrl.loadFeed(feedSrc);">Huffington Post</a></li>
+                    <li><a href="#" ng-click="feedSrc='http://feeds.feedburner.com/TechCrunch';$ctrl.loadFeed(feedSrc);">TechCrunch</a></li -->
+                    
+                    <li><a href="#" ng-click="feedSrc='http://news.google.com/news?as_qdr=h&output=atom&ned=au';$ctrl.loadFeed(feedSrc);">Google News Australia</a></li>
+                    <li><a href="#" ng-click="feedSrc='http://news.google.com/news?as_qdr=h&output=atom&ned=lv_lv';$ctrl.loadFeed(feedSrc);">Google News Latvia</a></li>
+                    <li><a href="#" ng-click="feedSrc='http://news.google.com/news?as_qdr=h&output=atom&ned=pt-BR_br';$ctrl.loadFeed(feedSrc);">Google News Brasil</a></li>
+                    <li><a href="#" ng-click="feedSrc='http://news.google.com/news?as_qdr=h&output=atom&ned=bg_bg';$ctrl.loadFeed(feedSrc);">Google News Bulgaria</a></li>     
+                    <li><a href="#" ng-click="feedSrc='http://news.google.com/news?as_qdr=h&output=atom&ned=in';$ctrl.loadFeed(feedSrc);">Google News India English</a></li>
+                    <li><a href="#" ng-click="feedSrc='http://news.google.com/news?as_qdr=h&output=atom&ned=ml_in';$ctrl.loadFeed(feedSrc);">Google News India Malayalam</a></li>
+                    <li><a href="#" ng-click="feedSrc='http://news.google.com/news?as_qdr=h&output=atom&ned=te_in';$ctrl.loadFeed(feedSrc);">Google News India Telugu</a></li>
+                    <li><a href="#" ng-click="feedSrc='http://news.google.com/news?as_qdr=h&output=atom&ned=ta_in';$ctrl.loadFeed(feedSrc);">Google News India Tamil</a></li>
+                    <li><a href="#" ng-click="feedSrc='http://news.google.com/news?as_qdr=h&output=atom&ned=hi_in';$ctrl.loadFeed(feedSrc);">Google News India hindi</a></li>
+                    <li><a href="#" ng-click="feedSrc='http://news.google.com/news?as_qdr=h&ned=it&hl=it&output=atom';$ctrl.loadFeed(feedSrc);">Google News Italy</a></li>
+                    <li><a href="#" ng-click="feedSrc='http://news.google.com/news?as_qdr=h&as_scoring=d&num=30&ned=cn&hl=cn&output=atom';$ctrl.loadFeed(feedSrc);">Google News China</a></li>
+                    <li><a href="#" ng-click="feedSrc='http://news.google.co.id/news?as_qdr=h&output=atom&ned=id';$ctrl.loadFeed(feedSrc);">Google News Indonesia</a></li>
+                    <li><a href="#" ng-click="feedSrc='http://news.google.co.th/news?as_qdr=h&output=atom&ned=th&hl=th';$ctrl.loadFeed(feedSrc);">Google News Thailandia</a></li>
+                    <li><a href="#" ng-click="feedSrc='http://news.google.com/news?as_qdr=h&output=atom&ned=vi_vn&hl=vi_vn';$ctrl.loadFeed(feedSrc);">Google News Vietnam</a></li>
+                    <li><a href="#" ng-click="feedSrc='http://news.google.com/news?as_qdr=h&output=atom&ned=ar_eg';$ctrl.loadFeed(feedSrc);">Google News Egypt</a></li>
+                    <li><a href="#" ng-click="feedSrc='http://news.google.com/news?as_qdr=h&output=atom&ned=ar_eg&pz=1&cf=all&hl=ar';$ctrl.loadFeed(feedSrc);">Google News Egypt 2</a></li>
+                    <li><a href="#" ng-click="feedSrc='http://news.google.com/news?as_qdr=h&output=atom&ned=iw_il';$ctrl.loadFeed(feedSrc);">Google News Israel</a></li>
+                    <li><a href="#" ng-click="feedSrc='http://news.google.com/news?as_qdr=h&output=atom&ned=en_il';$ctrl.loadFeed(feedSrc);">Google News Israel English</a></li>
+                    <li><a href="#" ng-click="feedSrc='http://news.google.com/news?as_qdr=h&output=atom&ned=en_my';$ctrl.loadFeed(feedSrc);">Google News Malaysia</a></li>
+                    <li><a href="#" ng-click="feedSrc='http://news.google.com/news?as_qdr=h&output=atom&ned=hk';$ctrl.loadFeed(feedSrc);">Google News Hong Kong</a></li>
+                    <li><a href="#" ng-click="feedSrc='http://news.google.com/news?as_qdr=h&output=atom&ned=ru_ru';$ctrl.loadFeed(feedSrc);">Google News Russia</a></li>
+                    <li><a href="#" ng-click="feedSrc='http://news.google.com/news?as_qdr=h&output=atom&ned=ru_ua';$ctrl.loadFeed(feedSrc);">Google News Ukraina ( RU )</a></li>
+                    <li><a href="#" ng-click="feedSrc='http://news.google.com/news?as_qdr=h&output=atom&ned=uk_ua';$ctrl.loadFeed(feedSrc);">Google News Ukraina ( UA )</a></li>
+                    <li><a href="#" ng-click="feedSrc='http://news.google.com/news?as_qdr=h&output=atom&ned=sr_rs';$ctrl.loadFeed(feedSrc);">Google News Serbia</a></li>
+                    <li><a href="#" ng-click="feedSrc='http://news.google.com/news?as_qdr=h&output=atom&ned=tr_tr';$ctrl.loadFeed(feedSrc);">Google News Turkey</a></li>
+                    <li><a href="#" ng-click="feedSrc='http://news.google.com/news?as_qdr=h&output=atom&ned=en_zw';$ctrl.loadFeed(feedSrc);">Google News Zimbabwe</a></li>
+                    <li><a href="#" ng-click="feedSrc='http://news.google.com/news?as_qdr=h&output=atom&ned=no_no';$ctrl.loadFeed(feedSrc);">Google News Norway</a></li>
+                    <li><a href="#" ng-click="feedSrc='http://news.google.com/news?as_qdr=h&output=atom&ned=sv_se';$ctrl.loadFeed(feedSrc);">Google News Sweden</a></li>
+                    <li><a href="#" ng-click="feedSrc='http://news.google.com/news?as_qdr=h&output=atom&ned=hu_hu';$ctrl.loadFeed(feedSrc);">Google News Hungary</a></li>
+                    <li><a href="#" ng-click="feedSrc='http://news.google.com/news?as_qdr=h&output=atom&ned=kr';$ctrl.loadFeed(feedSrc);">Google News Korea</a></li>
+                    <li><a href="#" ng-click="feedSrc='http://news.google.com/news?as_qdr=h&output=atom&ned=ar_me';$ctrl.loadFeed(feedSrc);">Google News Arabia</a></li>
+                    <li><a href="#" ng-click="feedSrc='http://news.google.co.jp/news?as_qdr=h&output=atom&ned=ja_jp&hl=ja';$ctrl.loadFeed(feedSrc);">Google News Japan</a></li>
+                    <li><a href="#" ng-click="feedSrc='http://www.japantimes.co.jp/feed/topstories/';$ctrl.loadFeed(feedSrc);">Japan Times</a></li>
+                    <li><a href="#" ng-click="feedSrc='http://news.google.com/news?as_qdr=h&output=atom&ned=ja_jp';$ctrl.loadFeed(feedSrc);">Google News Japan </a></li>
+                    <li><a href="#" ng-click="feedSrc='http://news.google.com/news?as_qdr=h&output=atom&ned=el_gr';$ctrl.loadFeed(feedSrc);">Google News Greece Ellenic</a></li>
+                    <li><a href="#" ng-click="feedSrc='http://news.google.ca/news?as_qdr=h&cf=all&hl=en&pz=1&ned=ca&output=atom';$ctrl.loadFeed(feedSrc);">Google News Canada</a></li>
+                    <li><a href="#" ng-click="feedSrc='http://news.google.com/news?as_qdr=h&ned=no_no&hl=no&output=atom';$ctrl.loadFeed(feedSrc);">Google News Norway</a></li>
+                    
+                </ul>
+              </div>
+                    <!-- input type="text" class="span10" autocomplete="off" placeholder="Enter Feed URL" data-ng-model="$ctrl.feedSrc" / -->
+            </div>
+               <div class="input-prepend" ng-show="feeds.length > 0">
+              <span class="add-on"><i class="icon-search"></i></span>
+                   <input class="span12" type="text" placeholder="Search" data-ng-model="filterText" />
+               </div>
+            </form>
+        </div>
+        
+        <div class="row">
+            <ul class="unstyled">
+                <span class="badge badge-warning" ng-show="feeds.length > 0">{{( feeds | filter:filterText).length}} Items</span>
+                <li ng-repeat="feed in $ctrl.feeds | filter:filterText">
+                    <!-- caso Cnn
+                    <div class="span2">
+                        <img src="{{feed.mediaGroups[0].contents[0].url}}" class="img-responsive"/>
+                    </div>
+                    <div class="span10">
+                        <h5><a href="{{feed.link}}">{{feed.title}}</a></h5>                                        
+                        <p class="text-left">{{feed.contentSnippet}}</p>
+                    </div -->
+                    
+                    <!-- caso Google news -->
+                    <div data-ng-bind-html="$ctrl.getHtml(feed.content)" class="nocss"></div>
+                    <h5><a href="{{feed.link}}">{{feed.title}}</a></h5>                                        
+                    <p class="text-left" data-ng-bind-html="$ctrl.getHtml(feed.contentSnippet)"></p>    
+                    <!-- span class="small">{{feed.publishedDate}}</span -->
+                    
+                </li>                
+            </ul>            
+        </div>   
+    </div>
+</div>

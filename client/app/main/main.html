@@ -1,0 +1,259 @@
+<header class="hero-unit" id="banner">
+  <div class="container">
+    <h1>Makeyournews!!</h1>
+    Choose your way to gather news from the world
+    <p class="lead"></p>
+    <img src="assets/images/logo.gif" alt="Logo of make your news">
+  </div>
+</header>
+
+
+<div ng-if="$ctrl.leftToRight">
+<style> 
+
+div font a {
+	padding-left: 10px;
+}
+
+/* arabo e israeliano */
+table div { 
+    position: relative;
+    right: 0px;
+    width: 100%;
+    border: 0px;
+    padding: 10px;
+    text-align: right;
+}
+
+td {
+    padding: 10px 0px 10px 10px; 
+    vertical-align: middle;
+    padding: 8px;
+}
+
+table
+{
+	background: #fff;
+	border-collapse: collapse;
+	font-family: "Arial", "Verdana", Sans-Serif;
+	font-size: 14px;
+	/*width: 620px;*/
+    width: 100%;
+	text-align: left;
+}
+th
+{
+	border-bottom: 2px solid #394A57;
+	color: #394A57;
+	font-size: 14px;
+	font-weight: normal;
+	padding: 10px;
+}
+td
+{
+	border-bottom: 1px solid #CCCCCC;
+	color: #394A57;
+	padding: 14px;
+}
+tr:hover td
+{
+	color: #95b4c4;
+}
+
+p
+{
+	background: #fff;
+	border-collapse: collapse;
+	font-family: "Arial", "Verdana", Sans-Serif;
+	font-size: 14px;
+	width: 620px;
+	text-align: left;
+}
+
+.nav[role=tablist] > li {
+    position: relative;
+    display: block;
+	float: right;
+}
+
+
+.page-header {
+	position: relative;
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #eee; 
+	width:100%;
+    text-align: right;
+	
+}
+	
+li > h5 {
+	position: relative;
+    right: 0px;
+    width: 100%;
+    border: 0px;
+    padding: 10px;
+    text-align: right;
+}
+
+.text-left {
+    text-align: right;
+}
+
+@media only screen and (min-width:480px) {
+ p {
+        background: #fff;
+        border-collapse: collapse;
+        font-family: "Arial", "Verdana", Sans-Serif;
+        font-size: 14px;
+        width: 100%;
+        text-align: left;
+    }
+    
+    table {
+        background: #fff;
+        border-collapse: collapse;
+        font-family: "Arial", "Verdana", Sans-Serif;
+        font-size: 14px;
+        width: 100%;
+        text-align: left;
+    }
+}
+</style>
+</div>
+	
+<div class="container">
+    <div class="row">
+      <h1 class="page-header">{{$ctrl.awesomeThings.title}}</h1>
+    </div>
+    <!-- div class="col-lg-12">
+      <h1 class="page-header">Headline News</h1>
+      <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="thing in $ctrl.awesomeThings">
+        <li><a href="#" uib-tooltip="{{thing.info}}">{{thing.name}}<button type="button" class="close" ng-click="$ctrl.deleteThing(thing)">&times;</button></a></li>
+      </ul>
+    </div -->
+  
+    <div class="row">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li role="presentation" class="active"><a data-toggle="tab" aria-controls="" role="tab" href="#topic1" ng-click="$ctrl.loadFeed(10)">{{$ctrl.awesomeThings.topic1}}</a></li>
+        <li role="presentation"><a data-toggle="tab" aria-controls="" role="tab" href="#topic5" ng-click="$ctrl.loadFeed(5)">{{$ctrl.awesomeThings.topic2}}</a></li>  
+        <!-- li role="presentation"><a data-toggle="tab" aria-controls="" role="tab" href="#topic2" ng-click="$ctrl.loadFeed(1)">Politics</a></li>  
+        <li role="presentation"><a data-toggle="tab" aria-controls="" role="tab" href="#topic2" ng-click="$ctrl.loadFeed(2)">Business</a></li>
+        <li role="presentation"><a data-toggle="tab" aria-controls="" role="tab" href="#topic3" ng-click="$ctrl.loadFeed(3)">National</a></li>
+        <!-- li role="presentation"><a data-toggle="tab" aria-controls="" role="tab" href="#topic4" ng-click="$ctrl.loadFeed(4)">Life Style</a></li>
+          
+        <li role="presentation"><a data-toggle="tab" aria-controls="" role="tab" href="#topic6" ng-click="$ctrl.loadFeed(6)">Science e Tech</a></li>
+        <!-- li role="presentation"><a data-toggle="tab" aria-controls="" role="tab" href="#topic6" ng-click="$ctrl.loadFeed(7)">Entertaiment</a></li>
+        <li role="presentation"><a data-toggle="tab" aria-controls="" role="tab" href="#topic8" ng-click="$ctrl.loadFeed(8)">Sports</a></li -->
+      </ul>
+
+      <div class="tab-content">
+        <div id="topic1" class="tab-pane fade in active">
+            <div class="row">
+            <ul class="unstyled">
+                <span class="badge badge-warning" ng-show="feeds.length > 0">{{( feeds | filter:filterText).length}} Items</span>
+                <li ng-repeat="feed in $ctrl.feeds | filter:filterText">
+                    <!-- caso Google news -->
+                    <div data-ng-bind-html="$ctrl.getHtml(feed.content)" class="nocss"></div>
+                    <h5><a href="{{feed.link}}">{{feed.title}}</a></h5>                                        
+                    <p class="text-left" data-ng-bind-html="$ctrl.getHtml(feed.contentSnippet)"></p>                    
+                </li>                
+            </ul>            
+        </div>
+        </div>
+        <div id="topic2" class="tab-pane fade ">
+            <div class="row">
+            <ul class="unstyled">
+                <span class="badge badge-warning" ng-show="feeds.length > 0">{{( feeds | filter:filterText).length}} Items</span>
+                <li ng-repeat="feed in $ctrl.feeds | filter:filterText">
+                    <!-- caso Google news -->
+                    <div data-ng-bind-html="$ctrl.getHtml(feed.content)" class="nocss"></div>
+                    <h5><a href="{{feed.link}}">{{feed.title}}</a></h5>                                        
+                    <p class="text-left" data-ng-bind-html="$ctrl.getHtml(feed.contentSnippet)"></p>
+                </li>                
+            </ul>            
+        </div>  
+        </div>
+        <div id="topic3" class="tab-pane fade ">
+           <div class="row">
+            <ul class="unstyled">
+                <span class="badge badge-warning" ng-show="feeds.length > 0">{{( feeds | filter:filterText).length}} Items</span>
+                <li ng-repeat="feed in $ctrl.feeds | filter:filterText">            
+                    <!-- caso Google news -->
+                    <div data-ng-bind-html="$ctrl.getHtml(feed.content)" class="nocss"></div>
+                    <h5><a href="{{feed.link}}">{{feed.title}}</a></h5>                                        
+                    <p class="text-left" data-ng-bind-html="$ctrl.getHtml(feed.contentSnippet)"></p>
+                </li>                
+             </ul>            
+            </div>
+        </div>
+        <div id="topic4" class="tab-pane fade ">
+            <div class="row">
+            <ul class="unstyled">
+                <span class="badge badge-warning" ng-show="feeds.length > 0">{{( feeds | filter:filterText).length}} Items</span>
+                <li ng-repeat="feed in $ctrl.feeds | filter:filterText">            
+                    <!-- caso Google news -->
+                    <div data-ng-bind-html="$ctrl.getHtml(feed.content)" class="nocss"></div>
+                    <h5><a href="{{feed.link}}">{{feed.title}}</a></h5>                                        
+                    <p class="text-left" data-ng-bind-html="$ctrl.getHtml(feed.contentSnippet)"></p>
+                </li>                
+             </ul>            
+            </div>
+        </div>
+        <div id="topic5" class="tab-pane fade ">
+            <div class="row">
+            <ul class="unstyled">
+                <span class="badge badge-warning" ng-show="feeds.length > 0">{{( feeds | filter:filterText).length}} Items</span>
+                <li ng-repeat="feed in $ctrl.feeds | filter:filterText">            
+                    <!-- caso Google news -->
+                    <div data-ng-bind-html="$ctrl.getHtml(feed.content)" class="nocss"></div>
+                    <h5><a href="{{feed.link}}">{{feed.title}}</a></h5>                                        
+                    <p class="text-left" data-ng-bind-html="$ctrl.getHtml(feed.contentSnippet)"></p>
+                </li>                
+             </ul>            
+            </div>
+        </div>
+        <div id="topic6" class="tab-pane fade ">
+            <div class="row">
+            <ul class="unstyled">
+                <span class="badge badge-warning" ng-show="feeds.length > 0">{{( feeds | filter:filterText).length}} Items</span>
+                <li ng-repeat="feed in $ctrl.feeds | filter:filterText">            
+                    <!-- caso Google news -->
+                    <div data-ng-bind-html="$ctrl.getHtml(feed.content)" class="nocss"></div>
+                    <h5><a href="{{feed.link}}">{{feed.title}}</a></h5>                                        
+                    <p class="text-left" data-ng-bind-html="$ctrl.getHtml(feed.contentSnippet)"></p>
+                </li>                
+             </ul>            
+            </div>
+        </div>
+        <div id="topic7" class="tab-pane fade ">
+            <div class="row">
+            <ul class="unstyled">
+                <span class="badge badge-warning" ng-show="feeds.length > 0">{{( feeds | filter:filterText).length}} Items</span>
+                <li ng-repeat="feed in $ctrl.feeds | filter:filterText">            
+                    <!-- caso Google news -->
+                    <div data-ng-bind-html="$ctrl.getHtml(feed.content)" class="nocss"></div>
+                    <h5><a href="{{feed.link}}">{{feed.title}}</a></h5>                                        
+                    <p class="text-left" data-ng-bind-html="$ctrl.getHtml(feed.contentSnippet)"></p>
+                </li>                
+             </ul>            
+            </div>
+        </div>
+        <div id="topic8" class="tab-pane fade ">
+            <div class="row">
+            <ul class="unstyled">
+                <span class="badge badge-warning" ng-show="feeds.length > 0">{{( feeds | filter:filterText).length}} Items</span>
+                <li ng-repeat="feed in $ctrl.feeds | filter:filterText">            
+                    <!-- caso Google news -->
+                    <div data-ng-bind-html="$ctrl.getHtml(feed.content)" class="nocss"></div>
+                    <h5><a href="{{feed.link}}">{{feed.title}}</a></h5>                                        
+                    <p class="text-left" data-ng-bind-html="$ctrl.getHtml(feed.contentSnippet)"></p>
+                </li>                
+             </ul>            
+            </div>
+        </div>
+    </div>
+    </div>	
+
+</div>
+

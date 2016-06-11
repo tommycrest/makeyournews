@@ -1,0 +1,393 @@
+ [
+     {
+		"label": "Australia",
+		"language": "au",
+		"ned": "au",
+		"hl": "en"
+	},
+     {
+		"label": "België",
+		"language": "nl_be",
+		"ned": "nl_be",
+		"hl": "nl"
+	},
+     {
+		"label": "Belgique",
+		"language": "fr_be",
+		"ned": "fr_be",
+		"hl": "fr"
+	},{
+		"label": "Botswana",
+		"language": "en_bw",
+		"ned": "en_bw",
+		"hl": "en"
+	},
+     {
+		"label": "Brasil",
+		"language": "pt_br",
+		"ned": "pt-BR_br",
+		"hl": "pt-BR"
+	},{
+		"label": "Canada Fr",
+		"language": "fr",
+		"ned": "ca",
+		"hl": "fr"
+	},
+     {
+		"label": "Canada En",
+		"language": "en",
+		"ned": "ca",
+		"hl": "en"
+	},{
+		"label": "Česká republika",
+		"language": "cs",
+		"ned": "cs_cz",
+		"hl": "cs"
+	},{
+		"label": "Chile",
+		"language": "es_cl",
+		"ned": "es_cl",
+		"hl": "es"
+	},{
+        "label":"Colombia",
+        "language":"es_co",
+        "ned":"es_co",
+        "hl":"es"
+    },{
+        "label":"Cuba",
+        "language":"es_cu",
+        "ned":"es_cu",
+        "hl":"es"
+    },{
+        "label":"Deutschland",
+        "language":"de",
+        "ned":"de",
+        "hl":"de"
+    },{
+        "label":"España",
+        "language":"en",
+        "ned":"en",
+        "hl":"en"
+    },{
+        "label":"Estados Unidos",
+        "language":"es_us",
+        "ned":"es_us",
+        "hl":"es"
+    },{
+        "label":"Ethiopia",
+        "language":"en_et",
+        "ned":"en_et",
+        "hl":"en"
+    },{
+        "label":"France",
+        "language":"fr",
+        "ned":"fr",
+        "hl":"fr"
+    },{
+        "label":"Ghana",
+        "language":"en_gh",
+        "ned":"en_gh",
+        "hl":"en"
+    },{
+    	"label":"India",
+    	"language":"in",
+        "ned":"in",
+        "hl":"en"
+    },{
+    	"label":"Indonesia",
+    	"language":"id_id",
+        "ned":"id_id",
+        "hl":"id"
+    },{
+    	"label":"Ireland",
+    	"language":"en_ie",
+        "ned":"en_ie",
+        "hl":"en"
+    },{
+    	"label":"Israel English",
+    	"language":"en_il",
+        "ned":"en_il",
+        "hl":"en"
+    },{
+    	"label":"Italia",
+    	"language":"it",
+        "ned":"it",
+        "hl":"it"
+    },{
+    "label":"Kenya",
+    "language":"en_ke",
+        "ned":"en_ke",
+        "hl":"en"
+    },{
+    "label":"Latvija",
+    "language":"lv_lv",
+        "ned":"lv_lv",
+        "hl":"lv"
+    },{
+    "label":"Lietuva",
+    "language":"lt_lt",
+        "ned":"lt_lt",
+        "hl":"lt"
+    },{
+    "label":"Magyarország",
+    "language":"hu_hu",
+        "ned":"hu_hu",
+        "hl":"hu"
+    },{
+    "label":"Malaysia",
+    "language":"en_my",
+        "ned":"en_my",
+        "hl":"en"
+    },{
+    "label":"Maroc",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"México",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"Nederland",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"New Zealand",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"Norge",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"Österreich",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"Pakistan",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"Perú",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"Philippines",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"Polska",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"Portugal",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"România",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"Schweiz",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"Sénégal",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"Singapore",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"Slovenija",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"Slovensko",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"South Africa",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"Suisse",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"Sverige",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"Tanzania",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"U.K.",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"U.S.",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"Uganda",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"Venezuela",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"Việt Nam (Vietnam)",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"Zimbabwe",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"Ελλάδα (Greece)",
+    "language":"el_gr",
+        "ned":"el_gr",
+        "hl":"el"
+    },{
+    "label":"България (Bulgaria)",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"Россия (Russia)",
+    "language":"ru",
+        "ned":"ru_ru",
+        "hl":"ru"
+    },{
+    "label":"Србија (Serbia)",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"Украина / русский (Ukraine)",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"Україна / українська (Ukraine)",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"ישראל (Israel)",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"الإمارات (UAE)",
+    "language":"ar_ae",
+        "ned":"ar_ae",
+        "hl":"ar"
+    },{
+    "label":"السعودية (KSA)",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"العالم العربي (Arabic)",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"لبنان (Lebanon)",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"مصر (Egypt)",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"हिन्दी (India)",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"বাংলাদেশ (Bangladesh)",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"தமிழ்(India)",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"తెలుగు (India)",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"മലയാളം (India)",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"ประเทศไทย (Thailand)",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"한국 (Korea)",
+    "language":"kr",
+        "ned":"kr",
+        "hl":"ko"
+    },{
+    "label":"中国 (China)",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"台灣 (Taiwan)",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+    "label":"日本 (Japan) ",
+    "language":"",
+        "ned":"",
+        "hl":""
+    },{
+        "label":"香港 (Hong Kong)",
+        "language":"",
+        "ned":"",
+        "hl":""
+    }
+     
+ ]
